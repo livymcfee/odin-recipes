@@ -2,11 +2,11 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
-
 }
 
 body {
     background-color: rgb(255, 251, 246);
+    display: inline-block;
 }
 
 div {
@@ -31,19 +31,28 @@ h1 {
 }
 
 .middle-line {
-    height: 100px;
+    height: 75px;
 }
 
 .recipe-list {
     background-color: #0000003b;
     font-size: 30px;
     font-weight: 600px;
+    column-count: 3;
+    text-align: center;
+}
 
+img {
+    width: 300px;
+    height: 200px;
 }
 
 li {
-    list-style-type: square;
-    padding: 20px;
+    list-style-type: none;
+    padding: 5px;
+    border: 5px;
+    margin: 0px;
+
 }
 
 a:visited,
@@ -54,3 +63,11 @@ a:link {
 a:hover {
     color: #2d3e0e;
 }
+
+column-count: 3;
+column-gap: 10px;
+column-rule-style: double;
+column-rule-width: 1px;
+column-span: all;
+text-align: center;
+column-width: auto;
